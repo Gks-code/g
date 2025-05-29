@@ -54,11 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     btnComprar.addEventListener('click', function () {
         const total = numerosSelecionados.length * valorPorNumero;
-        const mensagem = `Olá! Gostaria de comprar os números ${numerosSelecionados.join(', ')} da rifa. Total: R$ ${total.toFixed(2)}. Como proceder?
-                nome:
-                instagram:
-                telefone:
-                `;
+        const mensagem = `Olá! Gostaria de comprar os números ${numerosSelecionados.join(', ')} da rifa. Total: R$ ${total.toFixed(2)}. Como proceder? `;
 
         // Atualiza os números vendidos no localStorage
         numerosVendidos = [...numerosVendidos, ...numerosSelecionados];
@@ -76,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Redireciona para o WhatsApp
         // SUBSTITUA SEU_NUMERO pelo seu WhatsApp (apenas números, ex: 5511999999999)
-        const urlWhatsApp = `https://wa.me/5545988127886?text=${encodeURIComponent(mensagem)}`;
+        const urlWhatsApp = `https://wa.me/554191556512?text=${encodeURIComponent(mensagem)}`;
         window.open(urlWhatsApp, '_blank');
 
         // Reseta a seleção
